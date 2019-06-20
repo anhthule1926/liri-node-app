@@ -94,17 +94,16 @@ var movieThis = function(movieName) {
 
 //Concert seach
 var concertThis = function(concert) {
-    var queryURL = "https://rest.bandsintown.com/artists/" + bandName + "/events?app_id=[key]";
-    
+  var queryURL = "https://rest.bandsintown.com/artists/" + bandName + "/events?app_id=[key]";
     console.log(queryURL); 
 
-    axios.get(queryURL).then(
-        function(bandResponse){
-            console.log("Venue: " + bandResponse.data[0].venue.name);
-            console.log("City: " + bandResponse.data[0].venue.city);
-            console.log(moment(bandResponse.data[0].datetime).format("MM/DD/YYYY"));
-        }
-    );
+  axios.get(queryURL).then(
+    function(bandResponse){
+      console.log("Venue: " + bandResponse.data[0].venue.name);
+      console.log("City: " + bandResponse.data[0].venue.city);
+      console.log(moment(bandResponse.data[0].datetime).format("MM/DD/YYYY"));
+    }
+  );
 };
 
 // Random text
