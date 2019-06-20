@@ -1,4 +1,4 @@
 # liri-node-app
 
 
-![](movie.png)
+![](https://github.com/anhthule1926/liri-node-app/blob/master/assets/images/spotify.PNG)
